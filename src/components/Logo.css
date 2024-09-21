@@ -1,0 +1,15 @@
+.div{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.img{
+    width: 119px;
+    height: 28px;
+}
+
+.img1{
+    width: 119px;
+    height: 40px;
+}
