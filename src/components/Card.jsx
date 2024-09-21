@@ -2,13 +2,15 @@ import './Card.css'
 
 export default function Card(){
      function handleCardClick(event){
-         event.target.classList.toggle("active")
+        event.target.querySelectorAll(".card").forEach(card => card.classList.remove("active"));
+
+        event.target.closest(".card").classList.add("active");
      }
      return (
         <>
-        <div className="div-cards">
+        <div onClick={handleCardClick} className="div-cards">
             <div><h1></h1></div>
-            <div onClick={handleCardClick} className='card'>
+            <div className='card'>
                 <p>Starter  </p>
                 <h1>Free</h1>
                 <p>1 Website</p>
@@ -16,7 +18,7 @@ export default function Card(){
                 <p>Limited Support</p>
                 <button>Get Started</button>
             </div>
-            <div onClick={handleCardClick} className='card'>
+            <div className='card'>
                 <p>Premium</p>
                 <h1>$29/month</h1>
                 <p>10 Websitec</p>
@@ -24,7 +26,7 @@ export default function Card(){
                 <p>Premium Supportc</p>
                 <button>Get Started</button>
             </div>
-            <div onClick={handleCardClick} className='card'>
+            <div className='card'>
                 <p>Enterprise</p>
                 <h1>$49/month</h1>
                 <p>Unlimited Website</p>
