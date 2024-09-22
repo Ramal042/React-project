@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Card.css'
 
-const PricingCards = () => {
+ export default function PricingCards() {
     const [activeCard, setActiveCard] = useState(null);
 
     const handleCardClick = (card) => {
@@ -45,8 +45,6 @@ const PricingCards = () => {
                 <button>Get Started</button>
             </div>
         </div>
-                </>
+        </>
     );
 };
-
-export default PricingCards;
