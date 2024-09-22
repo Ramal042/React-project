@@ -3,7 +3,7 @@ import './Cards.css'
 export default function Cards() {
     return (
         <>
-            <div className='div'>
+            <div className='div-card'>
                 <div className='contents'>
                     <img src="./Icon 001.png" alt="" />
                     <h2>Benchmarks</h2>

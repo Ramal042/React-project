@@ -2,7 +2,7 @@
 .hero-section {
     display: flex;
     justify-content: space-around;
-    padding: 5px 50px;
+    padding: -10px 50px;
     background-color: #fff;
     min-height: 100vh;
 }

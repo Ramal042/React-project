@@ -1,7 +1,7 @@
-.div{
+.div-card{
+    display: flex;
     justify-content: center;
     gap: 60px;
-    padding: 100px 50px;
 }
 .contents{
     text-align: center;
